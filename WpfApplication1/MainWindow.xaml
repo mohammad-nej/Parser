@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Parser" Height="648" Width="1496" Loaded="Window_Loaded" Name="dgtoken">
+    <Grid Name="mainGrid" ShowGridLines="True" Margin="0,8,12,10">
+
+        <RichTextBox Height="488" Margin="10,10,215,0" Name="rtxMain" VerticalAlignment="Top" TextChanged="richTextBox1_TextChanged" SelectionChanged="rtxMain_SelectionChanged" PreviewTextInput="rtxMain_PreviewTextInput" PreviewKeyDown="rtxMain_PreviewKeyDown" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" >
+            <FlowDocument>
+                <Paragraph/>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Content="Start&#xD;&#xA;Start" Height="23" HorizontalAlignment="Left" Margin="177,503,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click_1" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="36,503,0,0" Name="comboBox1" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox1_SelectionChanged" />
+        <Button x:Name="button" Content="Load&#xD;&#xA;" HorizontalAlignment="Left" Margin="267,503,0,0" VerticalAlignment="Top" Width="75" Click="button_Click" Height="23"/>
+        <DataGrid x:Name="Grid1" HorizontalAlignment="Left" Margin="707,10,-476,0" VerticalAlignment="Top" Width="354" Height="488"/>
+        <DataGrid x:Name="Grid2" HorizontalAlignment="Left" Margin="1066,10,-873,0" VerticalAlignment="Top" Width="392" Height="488"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="941,504,-476,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox_SelectionChanged"/>
+        <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="1338,507,-873,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox2_SelectionChanged"/>
+        <TextBox x:Name="txtLexer" HorizontalAlignment="Left" Margin="85,536,0,0" TextWrapping="Wrap" Text="TextBox" Width="207" TextChanged="textBox_TextChanged" Height="23" VerticalAlignment="Top"/>
+        <Button x:Name="btnDFAOpen" Content="Open" HorizontalAlignment="Left" Margin="297,536,0,0" Width="45" Click="btnDFAOpen_Click" Height="22" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="Lexer DFA :" HorizontalAlignment="Left" Margin="10,533,0,0" Width="109" Height="25" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtKeywords" HorizontalAlignment="Stretch" Margin="517,535,752,0" TextWrapping="Wrap" Text="TextBox" Width="207" TextChanged="textBox_TextChanged" Height="23" VerticalAlignment="Top"/>
+        <Button x:Name="btnKeyWordsOpen" Content="Open" HorizontalAlignment="Left" Margin="729,537,0,0" Width="45" Click="btnKeyWordsOpen_Click" Height="22" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Key words :" HorizontalAlignment="Left" Margin="442,534,0,0" Width="71" Height="25" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtGrammer" HorizontalAlignment="Left" Margin="959,536,0,0" TextWrapping="Wrap" Text="TextBox" Width="207" TextChanged="textBox_TextChanged" Height="23" VerticalAlignment="Top"/>
+        <Button x:Name="btnGrammerOpen" Content="Open" HorizontalAlignment="Left" Margin="1171,536,0,0" Width="45" Click="btnGrammerOpen_Click" Height="22" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="Grammer :" HorizontalAlignment="Left" Margin="884,533,0,0" Width="109" Height="25" VerticalAlignment="Top"/>
+        <DataGrid x:Name="gridStack" HorizontalAlignment="Left" Margin="375,10,-117,0" VerticalAlignment="Top" Width="327" Height="489"/>
+        <Label x:Name="label1" Content="Stack" HorizontalAlignment="Left" Margin="522,-8,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="0.439,0.192"/>
+        <Button x:Name="btnNext" Content="Next " HorizontalAlignment="Left" Margin="537,504,-27,0" VerticalAlignment="Top" Width="75" Click="btnNext_Click"/>
+        <CheckBox x:Name="chkFinish" Content="Finish" HorizontalAlignment="Left" Margin="383,507,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="628,504,-118,0" VerticalAlignment="Top" Width="75" Click="btnStop_Click"/>
+        <CheckBox x:Name="chkDetail" Content="Detailed" HorizontalAlignment="Left" Margin="471,507,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.147,0.75" Checked="chkDetail_Checked"/>
+        <Button x:Name="btnKeyWordsOpenFile" Content="Open File" HorizontalAlignment="Left" Margin="779,537,0,0" Width="81" Click="btnKeyWordsOpen_Click" Height="22" VerticalAlignment="Top"/>
+        <Button x:Name="btnGrammerOpenFile" Content="Open File" HorizontalAlignment="Left" Margin="1221,537,0,0" Width="81" Click="btnKeyWordsOpen_Click" Height="22" VerticalAlignment="Top"/>
+        <Button x:Name="btnDFAOpenFile" Content="Open File" HorizontalAlignment="Left" Margin="347,537,0,0" Width="81" Click="btnKeyWordsOpen_Click" Height="22" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbType" GroupName="LexerOutput" Content="Type" HorizontalAlignment="Left" Margin="153,569,0,0" VerticalAlignment="Top" Checked="radioButton_Checked"/>
+        <RadioButton x:Name="rdbText" GroupName="LexerOutput" Content="Text" HorizontalAlignment="Left" Margin="95,569,0,0" VerticalAlignment="Top" Checked="rdbText_Checked"/>
+        <Label x:Name="label2" Content="Lexer Output: " HorizontalAlignment="Left" Margin="10,564,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.132,0.154"/>
+
+
+    </Grid>
+</Window>

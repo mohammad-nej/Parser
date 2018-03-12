@@ -1,0 +1,15 @@
+*in yek comment ast
+*inja mikhaim CTN ro vared konim
+a b c
+*hala bayad Non_final ro vared konim
+*0 is also a state and ofcourse it's non-final state
+1 2 4
+*hala bayad X jadval ro vared konim
+7
+*hala bayad khode jadval ro vared konim
+0 0 0
+0 3 0
+0 3 4
+5 0 0
+0 6 0
+0 0 0

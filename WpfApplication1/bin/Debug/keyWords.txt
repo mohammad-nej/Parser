@@ -1,0 +1,10 @@
+*If you have any keyword in you grammer you should enter them here.
+* as I mentioned in DFA.txt file, the lexer type for all the keywords is the sames
+* as the keywords text. for example, if you declare "while" as a keyword then 
+* lexer will return "while" as it's type so you can use "while" in you grammer.
+* The default type for all the names is "id" unless you declare them as a keyword
+* here.
+if
+
+*we should mention the delimeters here. I recommend to leave this line untouched.
+space enter

@@ -1,0 +1,52 @@
+***************************************************************************
+***                       IMPORTANT NOTE                                ***
+***************************************************************************
+*In the UI There are 2 radio buttons that define the Lexer output.
+* Generaly Lexer should detect the tokens and return the TYPE of the tokens
+* to parser. So if you have a grammer like "a->c" and you enter "c" in the RichTextBox
+* (while Lexer output is set to "Type") you will get an error since lexer will return "id" as its type(unless you declare
+* "c" as a keyword in keyword.txt file).This is how a standard lexer/parser should work.
+*But, if you set the Lexer output to "TEXT" then lexer will simply return the text of the
+* tokens to parser so that you don't have to declare every non-rule word in "keyword.txt"
+* file every single time.for example if you have "a->c" and you enter "c" in the RichTextBox
+* (while Lexer output is set to "Text") then the parser will accept "c" even without declaring
+* "c" as a keyword. This way you can rapidly play with many SIMPLE grammers without
+* being have to change the "keyword.txt" file every single time.
+* keep in mind that this option is just for learning reasons and you may not be able to parse
+* a real grammer in this mode  since you don't have access to "num","id","string" as tokens types.
+****************************************************************************
+****************************************************************************
+*General rules:
+*1.First grammer is always "start".
+*2.You are not allowed to have "start'" as a rule in your grammer
+*3.If you have a rule like A-><b> c and A->epsilon
+* then A->epsilon should always mentioned last.
+* for example:
+*  A-><b> c
+*  A->epsilon  
+*4.You should not enter space between left and right side of grammer
+* for example
+*  A-> <b> c (this is incorrect)
+*  A-><b> c  (this is correct)
+*5.Since ">","<","$" are used by the lexer or parser, If you want to use them
+* in your grammer you should always add a "\" before them
+* for example: A-> =\> 
+* IMPORTANT NOTE: Lexer will automaticly add "\" to the tokens so you should 
+*  use "=>" while wrting your actual input in the parser.
+*  for example: lets say you have "greater-> id =\> id" in your grammer. you 
+*   should write in the richTextBox "a => b" and the lexer while do the magic for you.
+*6.all the rules in the right side should be sorrounded by "<" and ">" 
+* (just like html tags)
+*7.EXAMPLE GRAMMER:
+*   start-><a> <b> d
+*   a->f
+*   a->epsilon
+*   b->c
+* This grammer accepts "fcd" and "cd" while lexer out is set to "TEXT", if you want this
+* grammer to work while lexer output is set to "TYPE", you should explictly define "f", "d"
+* and "c" as keywords in "keywords.txt" file)  .
+************************************************
+*
+***********************************
+start-><a>
+a->\<= salam f

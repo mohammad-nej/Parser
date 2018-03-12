@@ -1,0 +1,94 @@
+start#$definition@ %
+definition## include reshte $definition@
+definition#$var_type@ id $rest@ $definition@
+definition#$void_function@ $definition@
+definition#epsilon
+rest#$function@
+rest#$assignment@ ;
+function#( $argument@ ) { $any@ }
+void_function#void id ( $argument@ ) { $any@ }
+var_definition2#$var_type@ id $assignment@ ;
+assignment#= $value@
+assignment#epsilon
+value#id
+value#num
+value#reshte
+value#$bool_value@
+bool_value#true
+bool_value#false
+var_type#int
+var_type#string
+var_type#bool
+argument#$var_type@ id $next_argument@
+argument#epsilon
+next_argument#, $var_type@ id
+next_argument#epsilon
+function2#$func_type@ id ( $argument@ ) { $any@ }
+func_type#$var_type@
+func_type#void
+for#for ( $for_define@ ; $for_expr@ ;$increment@ ) $on_or_many@
+for_define#$var_type@ id = $value@
+for_define#id = $int_value@
+int_value#id
+int_value#num
+bool_expr#id $restBool@
+restBool#$bool_operand@ $int_value@
+restBool#epsilon
+bool_expr#num $bool_operand@ $int_value@
+bool_operand#<
+bool_operand#>
+bool_operand#!
+bool_operand#==
+bool_operand#!=
+bool_operand#<=
+bool_operand#>=
+bool_operand#||
+bool_operand#&&
+increment#id ++
+increment#id --
+increment#id += $int_value@
+increment#id -= $int_value@
+for_expr#$bool_expr@
+for_expr#epsilon
+while#while ( $while_operand@ ) $on_or_many@
+while_operand#$bool_expr@
+while_operand#$bool_value@
+on_or_many#$statement@
+on_or_many#{ $any@ }
+if#if ( $while_operand@ ) $on_or_many@ $else@
+else#$elseif@ else $on_or_many@
+else#else $on_or_many@
+else#epsilon
+elseif#elseif ( $while_operand@ ) $on_or_many@ $elseif2@
+elseif2#$elseif@
+elseif2#epsilon
+var_assignment#id $restVar@ ;
+restVar#$assign@
+restVar#$funcCall@
+funcCall#( $argument_Call@ )
+argument_Call#$int_value@ $argumentRest@
+argument_Call#epsilon
+argumentRest#, $int_value@ $argumentRest@
+argumentRest#epsilon
+term#$int_value@ $restOf@
+term#( $term@ )
+restOf#+ $term@
+restOf#- $term@
+restOf#/ $term@
+restOf#* $term@
+restOf#( $argument_Call@ ) $restOf@
+restOf#epsilon
+assign#= $term@
+assign#++
+assign#--
+assign#+= $term@
+assign#-= $term@
+term#$bool_value@
+statement#$for@
+statement#$if@
+statement#$while@
+statement#return $int_value@ ;
+statement#$var_assignment@
+statement#$var_definition2@
+any#$statement@ $any@
+any#epsilon

@@ -1,0 +1,25 @@
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Debug\MainWindow.baml
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Debug\MainWindow.g.cs
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Debug\App.g.cs
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1_MarkupCompile.cache
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.g.resources
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.Properties.Resources.resources
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.exe
+c:\users\asr noavaran\documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.pdb
+C:\Users\Mohammad123\Downloads\Back up nahaiy compiler 3 halate\Back up nahaiy compiler 3 halate\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.exe
+C:\Users\Mohammad123\Downloads\Back up nahaiy compiler 3 halate\Back up nahaiy compiler 3 halate\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.pdb
+C:\Users\Mohammad123\Downloads\Back up nahaiy compiler 3 halate\Back up nahaiy compiler 3 halate\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
+C:\Users\Mohammad123\Downloads\Back up nahaiy compiler 3 halate\Back up nahaiy compiler 3 halate\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
+C:\Users\Mohammad123\Downloads\Back up nahaiy compiler 3 halate\Back up nahaiy compiler 3 halate\WpfApplication1\WpfApplication1\obj\x86\Debug\MainWindow.baml
+C:\Users\Mohammad123\Downloads\Back up nahaiy compiler 3 halate\Back up nahaiy compiler 3 halate\WpfApplication1\WpfApplication1\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Mohammad123\Downloads\Back up nahaiy compiler 3 halate\Back up nahaiy compiler 3 halate\WpfApplication1\WpfApplication1\obj\x86\Debug\App.g.cs
+C:\Users\Mohammad123\Downloads\Back up nahaiy compiler 3 halate\Back up nahaiy compiler 3 halate\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1_MarkupCompile.cache
+C:\Users\Mohammad123\Downloads\Back up nahaiy compiler 3 halate\Back up nahaiy compiler 3 halate\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.g.resources
+C:\Users\Mohammad123\Downloads\Back up nahaiy compiler 3 halate\Back up nahaiy compiler 3 halate\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.Properties.Resources.resources
+C:\Users\Mohammad123\Downloads\Back up nahaiy compiler 3 halate\Back up nahaiy compiler 3 halate\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.csproj.GenerateResource.Cache
+C:\Users\Mohammad123\Downloads\Back up nahaiy compiler 3 halate\Back up nahaiy compiler 3 halate\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.csprojResolveAssemblyReference.cache

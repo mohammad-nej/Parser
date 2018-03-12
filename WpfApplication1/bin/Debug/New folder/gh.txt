@@ -1,0 +1,88 @@
+start#$definition@ %
+definition## include reshte $definition@
+definition#$var_type@ id $rest@ $definition@
+definition#$void_function@ $definition@
+definition#epsilon
+rest#$function@
+rest#$assignment@ ;
+function#( $argument@ ) { $any@ }
+void_function#void id ( $argument@) { $void_any@ }
+var_definition2#$var_type@ id $assignment@ ;
+assignment#= $value@
+assignment#epsilon
+value#id
+value#num
+value#reshte
+value#$bool_value@
+bool_value#true
+bool_value#false
+var_type#int
+var_type#string
+var_type#bool
+argument#$var_type@ id $next_argument@
+argument#epsilon
+next_argument#, $var_type@ id
+next_argument#epsilon
+function2#$func_type@ id ( $argument@ ) { $any@ }
+func_type#$var_type@
+func_type#void
+forRull#for ( $for_define@ ; $for_expr@ ;$increment@ ) $on_or_many@
+for_define#$var_type@ id = $value@
+for_define#id = $int_value@
+int_value#id
+int_value#num
+bool_expr#$int_value@ $bool_operand@ $int_value@
+bool_operand#<
+bool_operand#>
+bool_operand#!
+bool_operand#==
+bool_operand#!=
+bool_operand#<=
+bool_operand#>=
+bool_operand#||
+bool_operand#&&
+increment#id ++
+increment#id --
+increment#id += $int_value@
+increment#id -= $int_value@
+for_expr#$bool_expr@
+for_expr#epsilon
+whileRull#while ( $while_operand@ ) $on_or_many@
+while_operand#$bool_expr@
+while_operand#$bool_value@
+on_or_many#$statement@
+on_or_many#{ $any@ }
+ifRull#if ( $while_operand@ ) $on_or_many@ $elseRull@
+elseRull#$elseif@ else $on_or_many@
+elseRull#epsilon
+elseifRull#elseif ( $while_operand@ ) $on_or_many@ $elseifRull@
+elseifRull#epsilon
+var_assignment#id $assign@ ;
+term#$int_value@ $restOf@
+term#( $term@ )
+restOf#+ $term@
+restOf#- $term@
+restOf#/ $term@
+restOf#* $term@
+restOf#epsilon
+assign#= $term@
+assign#++
+assign#--
+assign#+= $term@
+assign#-= $term@
+term#$bool_value@
+statement#$forRull@
+statement#$ifRull@
+statement#$whileRull@
+statement#return $int_value@ ;
+statement#$var_assignment@
+statement#$var_definition2@
+any#$statement@ $any@
+any#epsilon
+void_any#$void_statement@ $void_any@
+void_any#epsilon
+void_statement#$forRull@
+void_statement#$ifRull@
+void_statement#$whileRull@
+void_statement#$var_assignment@
+void_statement#$var_definition2@
